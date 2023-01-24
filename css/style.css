@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --fuente: "Outfit", sans-serif;
+  --blanco: hsl(0, 0%, 100%);
+  --grisClaro: hsl(212, 45%, 89%);
+  --grisAzulado: hsl(220, 15%, 55%);
+  --azul: hsl(218, 44%, 22%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--grisClaro);
+  font-family: var(--fuente);
+  height: 100%;
+}
+.contenedor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  padding: 1.3rem;
+  border-radius: 8%;
+}
+.tarjeta {
+  background-color: var(--blanco);
+  width: 30rem;
+  height: auto;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0px 0px 28px 0px rgba(142, 140, 140, 0.51);
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(142, 140, 140, 0.51);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(142, 140, 140, 0.51);
+}
+
+.tarjeta h1 {
+  color: var(--azul);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+
+.tarjeta p {
+  color: var(--grisAzulado);
+  font-size: 15px;
+  padding: 0 2rem 3rem 2rem;
+}
